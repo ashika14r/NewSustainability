@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent moveToSignUp = new Intent(MainActivity.this, SignUp.class);
                 startActivity(moveToSignUp);
             }
-        });
+        }); //Practice
 
         eLogin.setOnClickListener(new View.OnClickListener() {
             @Override
