@@ -1,4 +1,5 @@
 package com.example.newsustainability;
+// This MainActivity.java
 
 import androidx.appcompat.app.AppCompatActivity;
 
