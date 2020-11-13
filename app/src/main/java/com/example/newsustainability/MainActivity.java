@@ -42,7 +42,10 @@ public class MainActivity extends AppCompatActivity {
                 String password = ePassword.getText().toString();
                 Boolean chkEP = db.checkEmailPass(email, password);
                 if(chkEP == true){
-                    Toast.makeText(getApplicationContext(), "Successful Login", Toast.LENGTH_SHORT).show();
+                    String userN = db.getUserName(email);
+                    Intent moveToHome = new Intent(MainActivity.this, HomeS.class);
+                    moveToHome.putExtra("userName", userN);
+                    startActivity(moveToHome);
                 }
                 else{
                     Toast.makeText(getApplicationContext(), "Wrong email or password", Toast.LENGTH_SHORT).show();
