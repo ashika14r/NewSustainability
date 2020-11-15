@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "NewSustainability"
+rootProject.name = "cs187 project"
