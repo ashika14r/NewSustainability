@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Questionare">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/QuestionText"
+            android:text="Questionaire."
+            android:textSize="30dp"
+            android:textColor="@color/cardview_dark_background"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/FirstButton"
+            android:layout_below="@id/QuestionText"
+            android:layout_marginTop="30dp"
+            android:text="Most Sustainable"
+            android:textSize="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SecondButton"
+            android:layout_below="@id/FirstButton"
+            android:layout_marginTop="50dp"
+            android:text="Moderate Sustainable"
+            android:textSize="20dp"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SecondButton"
+            android:id="@+id/ThirdButton"
+            android:layout_marginTop="50dp"
+            android:text="Least Sustainable"
+            android:textSize="20dp"/>
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/finishBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish Quiz"
+        android:layout_marginTop="580dp"/>
+
+    <TextView
+        android:id="@+id/Username"
+        android:text="Name"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/finishBtn"
+        android:layout_marginTop="580dp"
+        android:layout_marginLeft="30dp"/>
+
+
+</RelativeLayout>
