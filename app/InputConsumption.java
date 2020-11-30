@@ -72,7 +72,7 @@ public class InputConsumption extends AppCompatActivity {
                     Toast.makeText(InputConsumption.this, "Data Inserted, and you achieved the goal of this month!",
                             Toast.LENGTH_LONG).show();
                     else{
-                        Toast.makeText(InputConsumption.this, "Data Inserted, you didn't achieved the goal of this month",
+                        Toast.makeText(InputConsumption.this, "Data Inserted, and you didn't achieve the goal of this month",
                                 Toast.LENGTH_LONG).show();
                          }
 
