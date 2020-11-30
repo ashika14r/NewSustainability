@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class ModifyGoal extends AppCompatActivity {
 
-    Button IncraseConsumption, DecreaseConsumption;
+    Button IncreaseConsumption, DecreaseConsumption;
     DatabaseHelper db;
     String email;
     double water, electricity, gas;
@@ -31,7 +31,7 @@ public class ModifyGoal extends AppCompatActivity {
 
 
         DecreaseConsumption = findViewById(R.id.HardGoal);
-        IncraseConsumption = findViewById(R.id.EasyGoal);
+        IncreaseConsumption = findViewById(R.id.EasyGoal);
 
 
 
@@ -49,7 +49,7 @@ public class ModifyGoal extends AppCompatActivity {
             }
         });
 
-        IncraseConsumption.setOnClickListener(new View.OnClickListener() {
+        IncreaseConsumption.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 water = db.get_Goals_water(email) - 1.0;
