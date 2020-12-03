@@ -50,7 +50,8 @@
 
     <ScrollView
         android:layout_width="411dp"
-        android:layout_height="700dp"
+        android:layout_height="800dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -62,13 +63,13 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/weeklyGoalB"
+                android:id="@+id/InputConsumption"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="100dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
-                android:text="Progress for Weekly Goals"
+                android:text="Monthly Consumption"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textSize="18sp"
                 app:backgroundTint="#8BC34A" />
@@ -76,19 +77,19 @@
             <Button
                 android:id="@+id/dailyGoalB"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="100dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
-                android:text="Progress for Daily Goals"
+                android:text="Progress History"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textSize="18sp"
                 app:backgroundTint="#4CAF50" />
 
             <Button
-                android:id="@+id/modViewGoalB"
+                android:id="@+id/GoalsBtn"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="100dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
@@ -100,7 +101,7 @@
             <Button
                 android:id="@+id/achievementB"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="100dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
@@ -108,18 +109,6 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textSize="18sp"
                 app:backgroundTint="#00BCD4" />
-
-            <Button
-                android:id="@+id/recycleB"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp"
-                android:text="Recycling Helper"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:textSize="18sp"
-                app:backgroundTint="#2196F3" />
 
         </LinearLayout>
     </ScrollView>

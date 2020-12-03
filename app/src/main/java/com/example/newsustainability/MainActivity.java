@@ -44,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
                 if(chkEP == true){
                     String userN = db.getUserName(email);
                     Intent moveToHome = new Intent(MainActivity.this, HomeS.class);
-                    moveToHome.putExtra("userName", userN);
+                    //moveToHome.putExtra("userName", userN);
+                    moveToHome.putExtra("userEmail",email);
                     startActivity(moveToHome);
                 }
                 else{

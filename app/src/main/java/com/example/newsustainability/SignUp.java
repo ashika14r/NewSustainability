@@ -53,6 +53,11 @@ public class SignUp extends AppCompatActivity {
                             Boolean insert = db.insert(email, password, name);
                             if(insert == true){
                                 Toast.makeText(getApplicationContext(), "Registered Successfully", Toast.LENGTH_SHORT).show();
+                                String userN = db.getUserName(email);
+                                Intent moveToQuestionare = new Intent(SignUp.this, Questionare.class);
+                                //moveToQuestionare.putExtra("userName", userN);
+                                moveToQuestionare.putExtra("userEmail", email);
+                                startActivity(moveToQuestionare);
                             }
                         }
                         else{
