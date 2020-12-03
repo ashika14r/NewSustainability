@@ -126,9 +126,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         else {return 0.0;}
     }
 
-    public Cursor getAllConsumption(){
+    public Cursor getAllConsumption(String email){
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor result = db.rawQuery("select * from consumption", null );
+        Cursor result = db.rawQuery("select * from consumption where email=?", new String[] {email});
         return result;
     }
 
