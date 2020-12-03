@@ -78,7 +78,7 @@ public class InputConsumption extends AppCompatActivity {
         BtnView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Cursor result = db.getAllConsumption(email);
+                Cursor result = db.getAllConsumption();
                 Boolean achieved;
 
                 StringBuffer buffer = new StringBuffer();
