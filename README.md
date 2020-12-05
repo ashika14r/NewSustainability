@@ -14,7 +14,7 @@ Instruction for installing the project on your local machine:
 
 6. Run your emulator now, it should be working.
 
-7. You can also ask Kevin for the bundle file that you can download on your phone and run it.
+7. You can also ask Yuheng for the bundle file that you can download on your phone and run it.
 
 
 
